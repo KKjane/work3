@@ -28,19 +28,20 @@ public class TapActivity extends AppCompatActivity {
 
 //            tvTap.setText(tapNo);
         }
-        tvTap.setText(tapNo);
+//        tvTap.setText(tapNo);
 
         ImageButton ibCoin = (ImageButton) findViewById(R.id.ibCoin);
 
         ibCoin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                if(Integer.parseInt(tapNo) != count){
-//                    count++;
-//                    tvTap.setText(count);
-//                }else{
-//                    finish();
-//                }
+
+                if (Integer.parseInt(tapNo) != count) {
+                    count++;
+                    tvTap.setText(count+"");
+                } else {
+                    finish();
+                }
             }
         });
     }
