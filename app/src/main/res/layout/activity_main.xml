@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:theme="@style/AppTheme1"
     tools:context="com.tngp17.homework3.MainActivity">
 
     <ImageView
@@ -12,27 +11,29 @@
         android:layout_height="match_parent"
         android:background="@color/backgroundColor" />
 
-    <ImageView
-        android:id="@+id/ivTapper"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:background="@drawable/Tapper" />
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:layout_alignParentTop="true"
+       android:background="@drawable/tttttapper"/>
 
     <EditText
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="30sp"
         android:id="@+id/editText"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
         android:layout_centerInParent="true"
-        android:background="#ffffff" />
+        android:background="#ffffff"
+        android:hint="How many tap to win"/>
 
-    <Button
-        android:id="@+id/ivPlay"
+    <ImageButton
+        android:id="@+id/ibPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:background="@drawable/playbtn" />
-
 </RelativeLayout>

@@ -9,16 +9,17 @@
         android:background="@color/backgroundColor" />
 
     <TextView
+        android:id="@+id/tvTap"
+        android:layout_marginTop="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:text="5"
         android:textSize="50sp" />
 
 
-    <Button
-        android:id="@+id/btnCoin"
+    <ImageButton
+        android:id="@+id/ibCoin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
