@@ -8,5 +8,9 @@
         <!--<item name="colorAccent">@color/colorAccent</item>-->
     </style>
 
-
+    <style name="AppNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:cursorVisible">false</item>
+    </style>
 </resources>

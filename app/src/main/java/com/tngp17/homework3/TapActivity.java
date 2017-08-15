@@ -25,21 +25,20 @@ public class TapActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             tapNo = bundle.getString("tapNo");
-
-//            tvTap.setText(tapNo);
         }
-//        tvTap.setText(tapNo);
+
+        tvTap.setText("0");
 
         ImageButton ibCoin = (ImageButton) findViewById(R.id.ibCoin);
-
         ibCoin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 if (Integer.parseInt(tapNo) != count) {
                     count++;
                     tvTap.setText(count+"");
                 } else {
+                    Intent intent = new Intent(TapActivity.this, MainActivity.class);
+                    startActivity(intent);
                     finish();
                 }
             }
